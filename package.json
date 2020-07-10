@@ -1,0 +1,16 @@
+{
+  "name": "learn-express-with-docker",
+  "version": "0.0.1",
+  "description": "Test Express App",
+  "main": "startServer.js",
+  "author": "Scott Blanch",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/startServer.js",
+    "docker:build": "/bin/sh ./docker/scripts/host/create-image.sh",
+    "docker:run": "/bin/sh ./docker/scripts/host/run-container.sh"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
